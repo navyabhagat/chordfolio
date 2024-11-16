@@ -733,3 +733,15 @@ h1 > .interests-container {
   background-color: #555;
 }
 
+/* Initial state before animation */
+.animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* State after animation */
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
