@@ -179,12 +179,17 @@ body {
 
 .logo {
   font-size: 1.5em;
+<<<<<<< HEAD
   margin-bottom: 20px; 
   width: 130px;
 }
 .login-logo {
   font-size: 1.5em;
 
+=======
+  /* margin-bottom: 20px; */
+  /* width: 130px; */
+>>>>>>> e0ea373e600448e969e5fdbce915181571ff8aa0
 }
 
 .sidebar nav {
@@ -207,7 +212,6 @@ body {
   padding: 16px 15px;
   border-radius: 15px;
   color: #ffffff;
-  transition: background-color 0.2s ease-in-out;
 }
 
 #sidebar-track.active, #sidebar-track:hover {
@@ -404,107 +408,208 @@ body {
   flex: 1;
 }
 
-/* interests */
-
-body > .interests-container {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #000;
-  color: #fff;
+.featured-cards {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.interests-container {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
   gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
-h1 > .interests-container {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.card.featured {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  align-items: center;
   gap: 15px;
-  justify-content: center;
-  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #454545;
 }
 
-.interest {
-  color: #000000;
-  border-radius: 16px;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+.card.featured img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.featured-details {
   display: flex;
   flex-direction: column;
-    justify-content: center;
-    padding: 5px 0px;
-    height: 130px;
-    width: 130px;
 }
 
-.interest:hover {
-  transform: scale(1.1);
+.featured-details h3 {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  font-family: heading;
 }
 
-.interest.selected {
-  border: 1px solid #ffffff;
-  background-color: #121212; /* Changes background to darker when selected */
-  color: #fff; /* Ensure text stays visible */
+.featured-details p {
+  font-size: 0.9em;
 }
 
-.rnb {
-  background-color: #5d5de6;
+.featured-details .small-text {
+  font-size: 0.8em;
+  color: var(--gray);
 }
 
-.indie {
-  background-color: #a12f93;
-}
-
-.rock {
-  background-color: #5fc4ff;
-}
-
-.hiphop {
-  background-color: #70f071;
-}
-
-.emerging {
-  background-color: #ff6c6c;
-}
-
-.jazz {
-  background-color: #6de8d7;
-}
-
-.kpop {
-  background-color: #e97ce8;
-}
-
-.pop {
-  background-color: #f7cf5a;
-}
-
-.next-button {
-  background-color: rgba(69, 69,69,0.5);
-  color: #fff;
-  border: 1px solid #454545;
-  padding: 16px 50px;
-  font-size: 1rem;
+/* Portfolio Values Section */
+.portfolio-values {
+  background-color: #1e1e1e; /* Your theme background color */
+  border: 1px solid var(--stroke-color);
   border-radius: 16px;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  padding: 20px;
+  margin-bottom: 30px;
+  color: var(--text-color);
 }
+
+.portfolio-header h2 {
+  font-size: 1.2em;
+  font-family: heading;
+  margin-bottom: 10px;
+}
+
+.portfolio-header .portfolio-total {
+  font-size: 2.4em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.portfolio-header .change {
+  font-size: 1em;
+  margin-left: 8px;
+}
+
+.portfolio-summary {
+  font-size: 0.9em;
+  color: var(--gray);
+  margin: 10px 0;
+}
+
+.performance-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.performance-btn {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  font-family: heading;
+  cursor: pointer;
+  border: 1px solid var(--stroke-color);
+}
+
+.performance-btn.worst {
+  background-color: transparent;
+  color: var(--text-color);
+}
+
+.performance-btn.best {
+  background-color: #5BB6E3; /* Your theme primary button color */
+  color: black;
+}
+
+.performance-btn:hover {
+  opacity: 0.8;
+}
+
+.portfolio-tips {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #121212;
+  border-radius: 12px;
+  font-size: 0.9em;
+  border: 1px solid var(--stroke-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portfolio-tips .icon {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.tips-link {
+  color: #5BB6E3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tips-link:hover {
+  text-decoration: underline;
+}
+
+/* My Stock Table */
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  color: var(--text-color);
+}
+
+.stock-table thead th {
+  text-align: left;
+  font-size: 0.9em;
+  font-family: heading;
+  padding: 15px 10px;
+  color: var(--gray);
+  border-bottom: 1px solid var(--stroke-color);
+}
+
+.stock-table tbody td {
+  padding: 15px 10px;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--stroke-color);
+}
+
+.stock-info {
+  display: flex;
+  align-items: center;
+}
+
+.stock-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.stock-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.stock-name {
+  font-size: 0.95em;
+  font-family: heading;
+}
+
+.stock-subname {
+  font-size: 0.8em;
+  color: var(--gray);
+}
+
+.change.up {
+  color: #7cde84; /* Green */
+}
+
+.change.down {
+  color: #ffa5c2; /* Red */
+}
+
+.highlight {
+  color: #5BB6E3; /* Your theme's accent color */
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #1e1e1e;
+}
+
 
 .next-button:hover {
   background-color: #555;
