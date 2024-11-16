@@ -207,7 +207,7 @@ body {
   padding: 16px 15px;
   border-radius: 15px;
   color: #ffffff;
-  
+  transition: background-color 0.3s ease-in, color 0.3s ease-in; 
 }
 
 #sidebar-track.active, #sidebar-track:hover {
@@ -223,7 +223,6 @@ body {
 .sidebar nav li.active, .sidebar nav li:hover {
   background-color: #E3CA5B;
   color: black;
-  transition: transform 0.2s ease-in-out;
 }
 
 .account {
@@ -263,6 +262,11 @@ body {
   width: 300px;
   height: 210px;
   border: 1px solid #454545;
+  transition: transform 0.3s ease; /* Smooth transition for the transform effect */
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .card img {
