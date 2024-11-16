@@ -367,7 +367,7 @@ body {
   transition: none;
 }
 
-.artist-performance .card:hover, .project-timeline .card:hover {
+.artist-performance .card:hover, .project-timeline .card:hover, .artist-cover .card:hover {
   transform: none;
 }
 
