@@ -11,23 +11,29 @@
 <body>
     <div class="main-container">
         <aside class="sidebar">
-
-            <!-- <h1 class="logo">chordfolio</h1> -->
+      
+            <!-- Sidebar Navigation -->
             <nav>
-                <img src="design/logo.svg" alt="logo" class="logo">
-                <ul>
-                    <li class="active">Discover</li>
-                    <li>Track</li>
-                    <li>Portfolio</li>
-                </ul>
-            </nav>
-            <div class="account">My Account</div>
-        </aside>
+             <img src="design/logo.svg" alt="logo" class="logo">
+             <ul>
+               <a href="./index.html">
+                 <li class="active">Discover</li>
+               </a>
+               <a href="./track.html">
+                 <li id="sidebar-track">Track</li>
+               </a>
+               <a href="./portfolio.html">
+                 <li id="sidebar-portfolio">Portfolio</li>
+               </a>
+             </ul>
+           </nav>
+           <div class="account">My Account</div>
+         </aside>
 
-        <main id="artist-main" class="main-content">
+        <main id="artist-main" class="main-content animate">
 
-            <div class="artist-cover">
-                <div class="card artist">
+            <div class="artist-cover animate">
+                <div class="card artist animate">
                     <a href="./index.html"><img src="./imgs/back-icon.svg" alt="back" id="back-icon"></a>
                     <img src="./imgs/mkgee.jpg" alt="Mk.gee">
                     <div class="details">
@@ -36,8 +42,8 @@
                     </div>
                 </div>
 
-                <div class="artist-performance">
-                    <div class="card artist">
+                <div class="artist-performance animate">
+                    <div class="card artist animate">
                         <h3>Historical Performance</h3>
                         <!-- <h1>$230</h1>
                         <h1>↓ 5.90%</h1> -->
@@ -45,8 +51,8 @@
                     </div>
                 </div>
 
-                <div class="project-timeline">
-                    <div class="card artist">
+                <div class="project-timeline animate">
+                    <div class="card artist animate">
                         <h3>Project Timeline</h3>
                         <!-- <h1>$230</h1>
                         <h1>↓ 5.90%</h1> -->
@@ -55,6 +61,7 @@
                 </div>
         </main>
         </div>
+        <script src="script.js"></script>
 </body>
 
 </html>
