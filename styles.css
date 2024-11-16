@@ -6,9 +6,13 @@
   --stroke-color: var(#454545);
   --sidebar-discover: var(#E3CA5B);
   --sidebar-track: var(#5BB6E3);
+  --gray: var(#CFCFCF);
 }
 
-a { color: inherit; } 
+a { 
+  color: inherit; 
+  text-decoration: inherit;
+} 
 
 @font-face {
   font-family: "body";
@@ -344,3 +348,42 @@ body {
   top: 20px;
 }
 
+/* track */
+
+.track .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  height: 150px;
+  background-color: #121212;
+}
+
+.track .cards {
+  flex-direction: row;
+}
+
+.track .details {
+  position: relative;
+  margin: 0;
+  background-color: transparent;
+  text-align: left;
+  width: 100%;
+  flex: 2;
+  text-align: right;
+  gap: 30px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.track .details p {
+  color: #CFCFCF;
+}
+
+.track img {
+  flex: 1;
+}
