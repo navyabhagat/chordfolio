@@ -364,6 +364,11 @@ body {
   height: fit-content;
   padding: 30px;
   background-color: #121212;
+  transition: none;
+}
+
+.artist-performance .card:hover, .project-timeline .card:hover {
+  transform: none;
 }
 
 #back-icon {
