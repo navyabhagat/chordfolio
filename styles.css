@@ -16,7 +16,7 @@ a {
 
 @font-face {
   font-family: "body";
-  src: url("./fonts/atyp-font-family-1731661862-0/AtypTextTRIAL-Medium-BF65727125d9c4c.otf");
+  src: url("./fonts/atyp-font-family-1731661862-0/AtypTextTRIAL-Regular-BF65727125ea126.otf");
 }
 
 @font-face {
@@ -41,14 +41,16 @@ a {
   } */
 
   #login-img {
-    width: 80%;
+    /* width: 100%;
+     */
+     height: 100vh;
   }
   
   /* Main container */
   .container {
     display: flex;
-    width: 80%;
-    max-width: 900px;
+    width: 100%;
+    /* max-width: 900px; */
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -57,7 +59,7 @@ a {
   /* Left section (Logo and tagline) */
   .left-section {
     flex: 1;
-    background-color: #0d0d0d;
+    background-color: #121212;;
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -86,7 +88,7 @@ a {
   /* Right section (Form) */
   .right-section {
     flex: 1;
-    background-color: #1a1a1a;
+    background-color: #121212;
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -101,44 +103,48 @@ a {
   }
   
   .form-container h2 {
-    font-size: 1.8em;
+    font-size: 2em;
     margin-bottom: 20px;
+    font-family: heading;
   }
   
   .form-container form input {
     width: 100%;
-    padding: 12px;
+    padding: 16px 12px;
     margin: 10px 0;
     border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: #ffffff;
+    border-radius: 16px;
+    background-color: #121212;
+    color: white;
+    border: 1px solid #454545;
   }
   
   .form-container form input::placeholder {
-    color: #aaaaaa;
+    color: #CFCFCF;
   }
   
   .form-container form button {
+    font-family: heading;
     width: 100%;
-    padding: 12px;
-    background-color: #5555ff;
+    padding: 16px 12px;
+    background-color: rgba(69, 69,69,0.5);
     color: #ffffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 16px;
     font-size: 1em;
     cursor: pointer;
     margin-top: 15px;
+    border: 1px solid #454545;
   }
   
   .form-container form button:hover {
-    background-color: #3333cc;
+    background-color: rgba(69, 69,69,100);
   }
   
   .login-link {
     display: block;
     margin-top: 15px;
-    color: #8888ff;
+    color: #CFCFCF;
     text-decoration: none;
   }
   
@@ -173,8 +179,8 @@ body {
 
 .logo {
   font-size: 1.5em;
-  margin-bottom: 20px;
-  width: 130px;
+  /* margin-bottom: 20px; */
+  /* width: 130px; */
 }
 
 .sidebar nav {
