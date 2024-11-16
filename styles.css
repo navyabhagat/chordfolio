@@ -179,17 +179,12 @@ body {
 
 .logo {
   font-size: 1.5em;
-<<<<<<< HEAD
   margin-bottom: 20px; 
   width: 130px;
 }
 .login-logo {
   font-size: 1.5em;
 
-=======
-  /* margin-bottom: 20px; */
-  /* width: 130px; */
->>>>>>> e0ea373e600448e969e5fdbce915181571ff8aa0
 }
 
 .sidebar nav {
@@ -369,6 +364,7 @@ body {
 }
 
 /* track */
+
 
 .track .card {
   display: flex;
