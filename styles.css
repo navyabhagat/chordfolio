@@ -17,7 +17,7 @@ a { color: inherit; }
 
 @font-face {
   font-family: "heading";
-  src: url("./fonts/atyp-font-family-1731661862-0/AtypDisplayTRIAL-Medium-BF65727125b8683.otf");
+  src: url("./fonts/atyp-font-family-1731661862-0/AtypDisplayTRIAL-Regular-BF65727125d566e.otf");
 }
 
 
@@ -298,24 +298,45 @@ body {
 
 .artist-cover .card {
   background-color: #1e1e1e;
-  border-radius: 22px;
+  border-radius: 32px;
   /* padding: 20px; */
   /* text-align: center; */
   position: relative;
   width: 100%;
   height: 230px;
   border: 1px solid #454545;
+  margin-bottom: 30px;
 }
 
 .artist-cover .details {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 98%;
+  width: 96%;
   border: 1px solid #454545;
+  background-color: #121212;
+  border-radius: 22px;
+  left: 20px;
+  bottom: 20px;
 }
 
 .artist-cover .details h3 {
   margin: 0;
-  font-size: 1.3em;
+  font-size: 1.8em;
+  font-family: heading;
 }
+
+.artist-performance .card, .project-timeline .card {
+  height: fit-content;
+  padding: 30px;
+  background-color: #121212;
+}
+
+#back-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
