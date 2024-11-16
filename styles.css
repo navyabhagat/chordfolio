@@ -288,6 +288,10 @@ body {
   color: #FFA5C2;
 }
 
+.change.up {
+  color: #7cde84;
+}
+
 /* artist pg */
 
 #artist-main {
@@ -319,3 +323,4 @@ body {
   margin: 0;
   font-size: 1.3em;
 }
+
