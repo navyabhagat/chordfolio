@@ -207,6 +207,7 @@ body {
   padding: 16px 15px;
   border-radius: 15px;
   color: #ffffff;
+  
 }
 
 #sidebar-track.active, #sidebar-track:hover {
@@ -214,9 +215,15 @@ body {
   color: black;
 }
 
+#sidebar-portfolio.active, #sidebar-portfolio:hover {
+  background-color: #7cde84;
+  color: black;
+}
+
 .sidebar nav li.active, .sidebar nav li:hover {
   background-color: #E3CA5B;
   color: black;
+  transition: transform 0.2s ease-in-out;
 }
 
 .account {
