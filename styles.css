@@ -8,6 +8,8 @@
   --sidebar-track: var(#5BB6E3);
 }
 
+a { color: inherit; } 
+
 @font-face {
   font-family: "body";
   src: url("./fonts/atyp-font-family-1731661862-0/AtypTextTRIAL-Medium-BF65727125d9c4c.otf");
@@ -284,3 +286,5 @@ body {
 .change.down {
   color: #FFA5C2;
 }
+
+
