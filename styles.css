@@ -184,6 +184,7 @@ body {
 }
 .login-logo {
   font-size: 1.5em;
+
 }
 
 .sidebar nav {
@@ -207,6 +208,11 @@ body {
   border-radius: 15px;
   color: #ffffff;
   transition: background-color 0.2s ease-in-out;
+}
+
+#sidebar-track.active, #sidebar-track:hover {
+  background-color: #5fc4ff;
+  color: black;
 }
 
 .sidebar nav li.active, .sidebar nav li:hover {
