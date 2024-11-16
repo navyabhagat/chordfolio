@@ -678,12 +678,17 @@ h1 > .interests-container {
 
 .interest:hover {
   transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.interest.selected:hover {
+  transform: scale(1.1);
 }
 
 .interest.selected {
   border: 1px solid #ffffff;
-  background-color: #121212; /* Changes background to darker when selected */
-  color: #fff; /* Ensure text stays visible */
+  background-color: #ffffff; /* Changes background to darker when selected */
+  color: #000000; /* Ensure text stays visible */
 }
 
 .rnb {
